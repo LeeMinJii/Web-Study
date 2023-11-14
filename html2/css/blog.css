@@ -1,0 +1,31 @@
+.container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left {
+    width: 70%;
+    height: 100%;
+    /* background: beige; */
+    float: left;
+}
+
+.right {
+    width: 30%;
+    height: 100%;
+    /* background: lightgray; */
+    float: left;
+}
+
+.blog-profile {
+    width: 60px;
+    margin: 5px;
+    float: left;
+}
+
+.blog-name {
+    width: 80%;
+    height: 100%;
+    float: left;
+}
