@@ -12,19 +12,23 @@
     width: 20%;
     height: 400px;
     background: cornflowerblue;
-    float: left;
+    /* float: left; */
+    display: inline-block;
+    vertical-align: top; /*상하정렬 속성. 
+    top이면 위로 보내서 정렬/inline요소들에만 적용 가능*/
 }
 
 .right-content {
     width: 80%;
     height: 400px;
     background: coral;
-    float: left;
+    /* float: left; */
+    display: inline-block;
 }
 
 .footer {
     width: 100%;
     height: 100px;
     background-color: grey;
-    clear: both;
+    /* clear: both; */
 }
