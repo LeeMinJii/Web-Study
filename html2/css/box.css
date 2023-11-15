@@ -94,3 +94,10 @@ body {
     color: white;
     font-family: 'Times New Roman';
 }
+
+input[type=text] {
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid darkolivegreen;
+    border-radius: 5px;
+}
