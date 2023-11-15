@@ -5,7 +5,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding: 1px;
-    position: absolute; /*버튼 위치 지정 기준점*/
+    position: relative; /*버튼 위치 지정 기준점*/
 }
 
 .main-title {
@@ -36,8 +36,8 @@
 
     /* 버튼을 배경 오른쪽 아래에 위치 */
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    bottom: 50px;
+    right: 20px; 
 
     /* position:absolute요소 가운데 정렬
     position:absolute;
@@ -48,27 +48,27 @@
 }
 
 .overlap-box {
-    width: 700px; 
+    width: 80%; 
+    max-width: 600px;
     text-align: center;
     padding: 10px;
     font-family: 'Times New Roman';
     background: rgb(73, 95, 35);
     color: black;
 
-     /* 정렬 */
+     /* 정렬 
     position: absolute;
     left: 0;
     right: 0;
     margin: auto;
     width: 150px;
 
-    /* 겹치게 만들기 */
-    bottom: 0; 
+     겹치게 만들기 
+    bottom: 0; */
 
-    /* margin: auto;
+    margin: auto;
     position: relative;
-    top: -40px;  
-    이 방법을 쓰려면 부모에서 position: absolute 빼기!!*/
+    top: -40px; 
 }
 
 /* 이미지 */
