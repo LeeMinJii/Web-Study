@@ -1,0 +1,63 @@
+.main-background {
+    width: 100%;
+    height: 500px;
+    background-image: url(../versailles.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1px;
+    position: absolute; /*버튼 위치 지정 기준점*/
+}
+
+.main-title {
+    color: white;
+    font-size: 40px;
+    font-family: 'Times New Roman';
+    margin-top: 40px;
+    margin-right: 20px;
+    text-align: right;
+    padding: 1px;
+}
+
+.product-title {
+    font-family: 'Times New Roman';
+    margin-top: 40px;
+    color: brown;
+    text-align: center;
+    font-size: 30px;
+    background-color: darkolivegreen;
+}
+
+.main-button {
+    padding: 10px;
+    font-size: 15px;
+    background-color: white;
+    border: brown;
+    border-radius: 10px;
+
+    /* 버튼을 배경 오른쪽 아래에 위치 */
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    /* position:absolute요소 가운데 정렬
+    position:absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 150px; */
+}
+
+/* 이미지 */
+.product-img {
+    text-align: center;
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.product-name {
+    margin-top: 10px;
+    margin-bottom: 4px;
+    color: white;
+    font-family: 'Times New Roman';
+}
