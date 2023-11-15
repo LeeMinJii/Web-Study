@@ -29,3 +29,19 @@
     height: 100%;
     float: left;
 }
+
+.navbar li {
+    /* navbar클래스 안의 모든 li테그들이 
+    inline-block을 가질 수 있다. */
+    display: inline-block; 
+    width: 60px;
+    text-align: center;
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navbar a {
+    font-size: 16px;
+    text-decoration: none;
+}
