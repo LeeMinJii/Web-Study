@@ -1,3 +1,12 @@
+div {
+    /* width가 padding, border포함하게 하기 */
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
 .main-background {
     width: 100%;
     height: 500px;
