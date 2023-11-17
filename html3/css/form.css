@@ -1,0 +1,63 @@
+div, input, textarea {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.form-background{
+    padding: 30px;
+    background-color: black;
+}
+
+.form-white {
+    padding: 30px;
+    background-color: white;
+    
+    /* 크기 제한 */
+    width: 80%;
+    max-width: 600px;
+    /* 가운데 정렬 */
+    margin: auto;
+}
+
+.form-input {
+    width: 100%;
+    padding: 5px;
+    font-size: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.w-50 {
+    width: 50%;
+    float: left;
+    padding: 10px;
+}
+
+.w-100 {
+    width: 100%;
+    padding: 10px;
+    /* name이랑 padding 맞추려고 사용 */
+}
+
+.form-long {
+    height: 70px;
+
+    /* textarea의 최대 크기 제한 */
+    max-height: 200px;
+    max-width: 100%;
+}
+
+.yellow-button {
+    padding: 10px;
+    background-color: rgb(255, 197, 38);
+    border: none;
+    border-radius: 5px;
+    color: white;
+
+    /* 우측 정렬 간단하게 */
+    display: block;
+    margin-left: auto;
+}
