@@ -49,4 +49,26 @@
 
     position: absolute;
     right: 0px;
+
+    /* 커서 모양 바꾸기 */
+    cursor: pointer;
+}
+
+/* pseudo-class로 인터렉티브 버튼 만들기
+    순서 중요! hover->focus->active */
+
+/* 마우스 올렸을 때 유지할 스타일 */
+.button:hover {
+    background-color: chocolate;
+}
+
+/* 버튼 클릭 후 유지할 스타일 */
+.button:focus {
+    background-color: gray;
+}
+
+/* 버튼 클릭 중 유지할 스타일 */
+.button:active {
+    background-color: yellow;
+    border: 1px solid black;
 }
