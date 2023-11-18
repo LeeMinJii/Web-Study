@@ -1,0 +1,74 @@
+div {
+    /* width가 padding, border포함하게 하기 */
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.main-background {
+    width: 100%;
+    height: 500px;
+    background-image: url(../versailles.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1px;
+}
+
+.main-title {
+    color: white;
+    font-size: 40px;
+    font-family: 'Times New Roman';
+    margin-top: 40px;
+    margin-right: 20px;
+    text-align: right;
+    padding: 1px;
+}
+
+@media screen and (max-width: 600px) {
+    .main-title {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main-title {
+        font-size: 10px;
+    }
+}
+
+.product-title {
+    font-family: 'Times New Roman';
+    margin-top: 40px;
+    color: brown;
+    text-align: center;
+    font-size: 30px;
+    background-color: darkolivegreen;
+}
+
+.main-button {
+    padding: 10px;
+    font-size: 15px;
+    background-color: white;
+    border: brown;
+    border-radius: 10px;
+
+    /* 버튼 가운데 정렬 */
+    display: block;
+    margin: auto;
+}
+
+.overlap-box {
+    width: 80%; 
+    max-width: 600px;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Times New Roman';
+    background: rgb(73, 95, 35);
+    color: black;
+
+    margin: auto;
+    position: relative;
+    top: -40px; 
+}
