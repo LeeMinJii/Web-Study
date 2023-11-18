@@ -1,0 +1,39 @@
+div, input, testarea {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.nav-container {
+    display: flex;
+    height: 40px;
+    padding: 10px;
+    background: darkkhaki;
+
+    /* 세로 - 가운데 정렬 */
+    align-items: center;
+}
+
+.nav-item {
+    margin-right: 10px;
+}
+
+
+.flex-container {
+    display: flex;
+    
+    /* 가운데 정렬 / 우측은 flex-end / 좌측은 flex-start...*/
+    justify-content: center;
+
+    /* 가로/세로 배치 설정 */
+    flex-direction: row;
+}
+
+.flex-item {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    margin: 5px;
+}
