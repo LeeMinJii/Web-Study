@@ -72,3 +72,16 @@
     background-color: yellow;
     border: 1px solid black;
 }
+
+.input-test {
+    font-size: 10px;
+}
+
+/* input에도 pseudo-class 사용 */
+.input-test:hover {
+    border: 2px solid yellow;
+}
+
+.input-test:focus {
+    border-bottom: 5px solid red;
+}
