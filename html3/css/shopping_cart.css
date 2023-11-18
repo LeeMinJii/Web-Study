@@ -23,7 +23,7 @@
     max-width: 600px;
     background: white;
     border-radius: 10px;
-    margin: auto;
+    /* margin: auto; */
 
     position: relative;
 }
