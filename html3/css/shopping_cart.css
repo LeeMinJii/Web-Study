@@ -85,3 +85,24 @@
 .input-test:focus {
     border-bottom: 5px solid red;
 }
+
+.custom-link {
+    /* 링크에 밑줄 없애기 */
+    text-decoration: none;
+}
+
+/* <a> link에 pseudo-class 사용 */
+
+/* 방문 전 스타일링 :link */
+.custom-link:link {
+    color: red;
+}
+
+/* 방문 후 스타일링 :visited */
+.custom-link:visited {
+    color: black;
+}
+
+.custom-link:hover {
+    color: yellow;
+}
