@@ -28,7 +28,7 @@ body {
             url(../background.jpg);
 
     width: 100%;
-    height: 380px;
+    height: 350px;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -79,3 +79,31 @@ body {
 
     margin-left: 20px;
 }
+
+.flex-container {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-top: 0;
+}
+
+.flex-item {
+    flex: 1;
+    margin: 5px;
+}
+
+.flex-item img {
+    width: 120px;
+    height: 160px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+}
+
+/* .flex-item:hover {
+    width: 120px;
+    height: 170px;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
