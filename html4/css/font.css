@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'amsterdam';
+    src: url(../font/amsterdam.ttf);
+}
+
+div, input, testarea {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: 'amsterdam';
+}
