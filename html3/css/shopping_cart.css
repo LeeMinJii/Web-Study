@@ -1,0 +1,54 @@
+/* td, th {
+    border: 1px solid black;
+} */
+
+.table-background td, th{
+    padding: 15px;
+    border-bottom: 1px solid #c2d3de;
+
+    color: gray;
+    text-align: center;
+    font-size: 10px;
+}
+
+.background-blue {
+    width: 100%;
+    height: 370px;
+    background: skyblue;
+    padding: 30px;
+}
+
+.table-background {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    border-radius: 10px;
+    margin: auto;
+
+    position: relative;
+}
+
+.table-background th:nth-child(1) {
+    /* 테이블의 1번째 나오는 th애들을 모두 다음과 같이 설정.
+    1번째 열들의 길이만 늘리기. class를 만들 필요 없음. */
+    width: 400px;
+}
+
+/* .cell-long {
+    테이블 길이 늘리는 클래스.
+    테이블은 최소 폭이 있다. 글자 깨지면 안돼서. 
+    여기서 width는 거의 max-width역할.
+    width: 700px;
+} */
+
+.button {
+    color: white;
+    background-color:  rgb(0, 80, 91);
+    border-radius: 10px;
+    font-size: 10px;
+    padding: 10px;
+    margin-top: 20px;
+
+    position: absolute;
+    right: 0px;
+}
