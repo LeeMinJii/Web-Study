@@ -9,6 +9,8 @@ body {
 
 .container {
     width: 100%;
+    height: 100vh;
+
     background: black;
     padding-top: 25px;
     padding-left: 15px;
@@ -55,7 +57,7 @@ body {
     width: 100%;
     max-width: 400px;
     margin: 20px;
-    margin-top: 80px;
+    margin-top: 90px;
     color: white;
 }
 
@@ -68,28 +70,33 @@ body {
     color: white;
     padding: 10px;
     margin-top: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
     /* 배경투명도 조절 */
     background-color: rgba(46, 46, 46, 0.5);
 }
 
+.top-button:hover {
+    /* 마우스 올리면 불투명도 증가 */
+    background-color: rgba(46, 46, 46, 0.8);
+}
+
 .text-position {
     position: relative;
-    bottom: 40px;
-
+    bottom: 0;
+    
     margin-left: 20px;
+    margin-bottom: 0;
 }
 
 .flex-container {
     width: 100%;
     display: flex;
-    justify-content: right;
-    margin-top: 0;
+    justify-content: center;
 }
 
 .flex-item {
-    flex: 1;
-    margin: 5px;
+    margin: 15px;
 }
 
 .flex-item img {
@@ -97,13 +104,14 @@ body {
     height: 160px;
     background-size: cover;
     background-repeat: no-repeat;
-
     cursor: pointer;
 }
 
-/* .flex-item:hover {
-    width: 120px;
-    height: 170px;
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
+.flex-item:hover img {
+     /* 0.2는 0.2초 동안 이미지가 커지는 속도 */
+    transition: all 0.2s linear;
+    /* 1.2는 1.2배 만큼 이미지를 크게하라라는 의미 */
+    transform: scale(1.15);
+    /* 몇 초동안 커질껀지 */
+    transition-duration: 0.3s;
+}
