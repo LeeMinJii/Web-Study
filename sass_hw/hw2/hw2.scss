@@ -1,0 +1,32 @@
+// mixin, extend 이용
+
+$초록 : #298F07;
+$파랑 : #0067A3;
+$노랑 : #FFD400;
+
+%btn {
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+} 
+
+@mixin 색깔($버튼색깔, $글씨색깔){
+    background-color: $버튼색깔;
+    color: $글씨색깔;
+}
+
+.alert-box-green {
+    @extend %btn;
+    @include 색깔($초록, #134204);
+}
+
+.alert-box-blue {
+    @extend %btn;
+    @include 색깔($파랑, #084b71);
+}
+
+.alert-box-yellow {
+    @extend %btn;
+    @include 색깔($노랑, #584a05);
+}

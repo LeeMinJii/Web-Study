@@ -1,0 +1,21 @@
+.alert-box-yellow, .alert-box-blue, .alert-box-green {
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.alert-box-green {
+  background-color: #298F07;
+  color: #134204;
+}
+
+.alert-box-blue {
+  background-color: #0067A3;
+  color: #084b71;
+}
+
+.alert-box-yellow {
+  background-color: #FFD400;
+  color: #584a05;
+}/*# sourceMappingURL=hw2.css.map */
