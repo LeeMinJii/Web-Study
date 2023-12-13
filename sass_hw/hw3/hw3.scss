@@ -1,0 +1,27 @@
+div {
+    box-sizing: border-box;
+}
+
+@mixin column($너비비율) {
+    float: left;
+    width: $너비비율;
+    padding: 15px;
+    border: 1px solid gray;
+    margin-top: 10px;
+    background-color: lightgoldenrodyellow
+}
+
+.row {
+    // Nesting 문법
+    .col-6 {
+        @include column(50%);
+    }
+
+    .col-4 {
+        @include column(33.3333%);
+    }
+
+    .col-3 {
+        @include column(25%);
+    }
+}

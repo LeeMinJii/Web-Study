@@ -1,0 +1,28 @@
+div {
+  box-sizing: border-box;
+}
+
+.row .col-6 {
+  float: left;
+  width: 50%;
+  padding: 15px;
+  border: 1px solid gray;
+  margin-top: 10px;
+  background-color: lightgoldenrodyellow;
+}
+.row .col-4 {
+  float: left;
+  width: 33.3333%;
+  padding: 15px;
+  border: 1px solid gray;
+  margin-top: 10px;
+  background-color: lightgoldenrodyellow;
+}
+.row .col-3 {
+  float: left;
+  width: 25%;
+  padding: 15px;
+  border: 1px solid gray;
+  margin-top: 10px;
+  background-color: lightgoldenrodyellow;
+}/*# sourceMappingURL=hw3.css.map */
