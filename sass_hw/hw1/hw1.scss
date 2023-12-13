@@ -1,0 +1,29 @@
+ul {
+    li {
+        list-style-type: none;
+        padding: 10px;
+        border: 1px solid gray;
+    }
+
+    .active {
+        background-color: skyblue;
+        color: white;
+    }
+
+    li:hover{
+        background-color: red;
+        color: white;
+    }
+}
+
+// .list {
+//     li{
+//         list-style: none;
+//         padding: 5px;
+//         border: 1px solid gray;
+//     }
+//     .active {
+//         background-color: skyblue;
+//         color: white;
+//     }
+// }
