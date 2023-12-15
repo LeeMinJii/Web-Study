@@ -1,3 +1,4 @@
+/*버튼  */
 .ani-btn {
     padding: 10px;
     background-color: skyblue;
@@ -36,6 +37,7 @@
     }
 }
 
+/* +기호 */
 .ani-plus {
     margin: 10px;
     font-size: 50px;
@@ -60,4 +62,40 @@
     100% {
         transform: rotate(45deg) scale(2);
     }
+}
+
+/* 왼쪽 바 */
+.ani-navbar {
+    width: 200px;
+    height: 100%;
+    background: black;
+    color: white;
+    padding: 20px;
+    /* 모든 요소 앞에 존재하게 : fixed */
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    /* 초기 화면 */
+    transform: translateX(-100px);
+    text-align: right;
+    /* 서서히 움직이게 */
+    transition: all 1s;
+}
+
+.ani-navbar:hover {
+    transform: translateX(0px);
+    text-align: center;
+
+}
+
+.ani-navbar:hover p {
+    animation-name: slide;
+    animation-duration: 1s;
+}
+
+@keyframes slide {
+    0% { transform: translateX(-250px); }
+    50% { transform: translateX(20px) skew(-30deg);}
+    100% { transform: translateX(0px);}
 }
