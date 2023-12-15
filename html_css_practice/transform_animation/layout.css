@@ -1,0 +1,63 @@
+.ani-btn {
+    padding: 10px;
+    background-color: skyblue;
+    color: white;
+    border: none;
+    border-radius: 5px; 
+    font-size: 20px;
+    cursor: pointer;
+    /* 가운데 정렬 */
+    display: block;
+    margin: 20px auto;
+}
+
+.ani-btn:hover {
+    animation-name: shake;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+    /* iteration은 반복 횟수 */
+}
+
+@keyframes shake{
+    0% {
+        transform: translateX(0deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    75% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: translateX(0deg);
+    }
+}
+
+.ani-plus {
+    margin: 10px;
+    font-size: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ani-plus:hover {
+    animation-name: 회전후커지기;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    /* fill-mode는 마지막 상태 유지 */
+}
+
+@keyframes 회전후커지기 {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(45deg) scale(2);
+    }
+}
