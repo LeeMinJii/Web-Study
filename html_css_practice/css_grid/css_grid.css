@@ -1,7 +1,13 @@
 .grid-container {
     display: grid;
+    /* 세로칸 개수, 사이즈 */
     grid-template-columns: 100px 100px 100px 100px;
+    /* 가로칸 개수, 사이즈 */
     grid-template-rows: 100px 100px 100px;
+    grid-template-areas: 
+    "헤더 헤더 헤더 헤더"
+    "사이드 . . ."
+    "사이드 . . .";
 }
 
 .grid-container div {
@@ -9,15 +15,17 @@
 }
 
 .grid-nav {
-    /* 세로선 1-5까지 차지해주세요 */
-    grid-column: 1 / 5;
+    grid-area: 헤더;
+    /* 세로선 1-5까지 차지해주세요 
+    grid-column: 1 / 5; */
 }
 
 .grid-sidebar {
-    grid-row: 2 / 4;
+    grid-area: 사이드;
+    /* grid-row: 2 / 4; */
 }
 
 .grid-content {
-    grid-column: 2 / 5;
-    grid-row: 2 / 4;
+    /* grid-column: 2 / 5;
+    grid-row: 2 / 4; */
 }
