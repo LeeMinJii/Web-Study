@@ -3,15 +3,25 @@
     <head>
         <meta charset="UTF-8">
         <title>Document</title>
+        <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <h1 id="hello">안녕하세요</h1>
-        <h1 id="hi">JS 초보예요</h1>
+
+        <div id="box" class="alert-box">Alert!
+            <button onclick="closeAlert()">닫기</button>
+        </div>
+        <button onclick="openAlert()">버튼</button>
 
         <script>
-            document.getElementById('hello').innerHTML = '안녕';
-            document.getElementById('hello').style.fontSize = '14px';
-            document.getElementById('hi').innerHTML = 'JS 고수예요';
+            function openAlert(){
+                document.getElementById('box').style.display = 'block';
+            }
+
+            function closeAlert(){
+                document.getElementById('box').style.display = 'none';
+            }
         </script>
+
+
     </body>
 </html>
