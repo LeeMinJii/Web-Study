@@ -3,25 +3,30 @@
     <head>
         <meta charset="UTF-8">
         <title>Document</title>
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="function.css">
     </head>
     <body>
 
         <div id="alert" class="alert-box">
-            <p id="title">아이디를 입력하세요.</p>
-            <button onclick="alert('none','close')">닫기</button>
+            <p id="title"></p>
+            <button id="close">닫기</button>
         </div>
 
         <button onclick="alert('block','아이디를 입력하세요')">버튼1</button>
         <button onclick="alert('block','비밀번호를 입력하세요')">버튼2</button>
 
         <script>
+
+            // 이벤트 리스너
+            document.getElementById('close').addEventListener('click', 
+            function(){document.getElementById('alert').style.display='none';}
+            );
+
             function alert(any, text){
                 document.getElementById('alert').style.display = any;
                 document.getElementById('title').innerHTML = text;
             }
         </script>
-
 
     </body>
 </html>
