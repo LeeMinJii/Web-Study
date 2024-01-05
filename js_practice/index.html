@@ -7,21 +7,18 @@
     </head>
     <body>
 
-        <div id="box" class="alert-box">Alert!
-            <button onclick="alert('none')">닫기</button>
+        <div id="alert" class="alert-box">
+            <p id="title">아이디를 입력하세요.</p>
+            <button onclick="alert('none','close')">닫기</button>
         </div>
-        <button onclick="alert('block')">버튼</button>
+
+        <button onclick="alert('block','아이디를 입력하세요')">버튼1</button>
+        <button onclick="alert('block','비밀번호를 입력하세요')">버튼2</button>
 
         <script>
-            /*function openAlert(){
-                document.getElementById('box').style.display = 'block';
-            }
-
-            function closeAlert(){
-                document.getElementById('box').style.display = 'none';
-            }*/
-            function alert(any){
-                document.getElementById('box').style.display = any;
+            function alert(any, text){
+                document.getElementById('alert').style.display = any;
+                document.getElementById('title').innerHTML = text;
             }
         </script>
 
